@@ -1,19 +1,3 @@
-// export async function predictImage(imageFile) {
-//     const formData = new FormData();
-//     formData.append("image", imageFile);
-
-//     const response = await fetch("https://teayear-rice.hf.space/predict", {
-//         method: "POST",
-//         body: formData
-//     });
-
-//     if (!response.ok) {
-//         throw new Error(`Failed to fetch: ${response.statusText}`);
-//     }
-
-//     return await response.json();
-// }
-
 export async function predictImage(imageFile) {
     const formData = new FormData();
     formData.append("image", imageFile);
@@ -37,4 +21,3 @@ export async function predictImage(imageFile) {
     
     return jsonData;
 }
-
